@@ -28,7 +28,7 @@ const getFname = (members) => members.map(({ name, username }) => name || userna
 const getName = (members) => members.map(({ username }) => username).join(', ');
 
 export const createDirectRoom = function(members, roomExtraData = {}, options = {}) {
-	if (members.length > (settings.get('DirectMesssage_maxUsers') || 1)) {
+	if (members.length > (settings.get('DirectMessage_maxUsers') || 1)) {
 		throw new Error('error-direct-message-max-user-exceeded');
 	}
 

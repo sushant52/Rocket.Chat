@@ -680,7 +680,7 @@ export class SlackImporter extends Base {
 			return;
 		}
 
-		const maxUsers = settings.get('DirectMesssage_maxUsers') || 1;
+		const maxUsers = settings.get('DirectMessage_maxUsers') || 1;
 
 		this.mpims.channels.forEach((channel) => {
 			if (!channel.do_import) {
